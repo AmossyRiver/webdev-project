@@ -1,0 +1,256 @@
+<!doctype html>
+
+<html lang="en">
+	
+    <head>
+		<meta charset="utf-8">
+		
+		<title>Learning Journal - CI435 Introduction to Web Development</title>
+		
+	    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+        <link href="css/style.css" rel="stylesheet">
+
+	</head>
+
+<body>
+	
+	<a id="top"></a>
+
+	<div id="wrapper">
+
+
+    <header>
+		<h1>CI435 Learning Journal</h1>
+		<h2>How to make a responsive website</h2>
+	</header>
+	
+    <nav class="menu">
+		<ul>
+			<li><a href="index.html">Learning Journal</a></li>
+			<li><a href="tutorial.html">Tutorial</a></li>
+        	<li><a href="contact.html">Contact me</a></li>
+		</ul>
+	</nav>
+    
+    	<nav>
+    	<!--Secondary page navigation -->
+			<h3>The weekly post</h3>
+				<ol>
+					<li><a href="#week1">Creating a basic HTML website</a></li>
+					<li><a href="#week2">Learning more tags</a></li>
+                    <li><a href="#week3">Learning about lists and tables</a></li>
+				</ol>
+		</nav>
+    
+<!--Table with week's timetable-->
+     <table>
+    	<caption>My timetable</caption>
+    	<tr>
+    		<th>Day/time</th>
+    		<th>Monday</th>
+   			<th>Tuesday</th>
+			<th>Wednesday</th>
+        	<th>Thursday</th>
+   			<th>Friday</th>
+    	</tr>
+    	<tr>
+    		<td>9-10am</td>
+    		<td></td>
+    		<td>CI404 Lecture<br>H300</td>
+        	<td></td>
+        	<td></td>
+			<td></td>
+    	</tr>
+   		<tr>
+    		<td>10-11am</td>
+    		<td></td>
+			<td>CI404 Lecture<br>H300</td>
+        	<td></td>
+        	<td>C400 lecture<br>W310</td>
+			<td></td>
+		</tr>
+    	<tr>
+    		<td>11-12am</td>
+    		<td></td>
+    		<td>CI401 Seminar <br>C204</td>
+        	<td>CI401 lab<br>C109</td>
+        	<td>CI435 Lecture<br>H300</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>12-13pm</td>
+			<td></td>
+			<td>CI405 Lab<br>C106</td>
+			<td></td>
+			<td>CI435 Lab<br>C205</td>
+			<td></td>
+		</tr>
+    	<tr>
+    		<td>13-14pm</td>
+    		<td></td>
+    		<td></td>
+        	<td></td>
+        	<td></td>
+			<td></td>
+    	</tr>
+		 <tr>
+			<td>14-15pm</td>
+			<td>CI405 Lecture<br>CG50</td>
+			<td></td>
+			<td></td>
+			<td>C1404 Lab<br>C415</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>15-16pm</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>C1404 Lab<br>C415</td>
+			<td></td>
+		</tr>
+    	<tr>
+    		<td>16-17pm</td>
+    		<td>CI401 Lecture<br>H300</td>
+    		<td></td>
+        	<td></td>
+        	<td></td>
+			<td></td>
+    	</tr>
+    	<tr>
+    		<td>17-18pm</td>
+    		<td>CI453 Lecture<br>H300</td>
+    		<td></td>
+        	<td></td>
+        	<td></td>
+			<td></td>
+    	</tr>
+
+    </table>
+
+<main>
+        
+        	<h2>Weekly Posts</h2>
+	
+			<article>
+<!--A single, dated post -->
+				<header class="post">
+					<h3><a id="week3"></a>Week 3 - Learning about lists and tables</h3>
+					<p>Posted on <time datetime="2019-10-15"><strong>October 15, 2019</strong></time></p>
+    			</header>
+
+			<h4>Nesting an unordered list within an ordered list</h4>
+
+			<ol>
+<!--Ordered (numbered) list -->
+				<li>Week 1
+					<ul>
+        			<!--Nested unordered list -->
+						<li>Set up site folder</li>
+						<li>Create index.html</li>
+						<li>Create about.html</li>
+						<li>Link files using alists for the navigation</li>
+					</ul>
+					</li>
+						<li>Week 2
+  					<ul>
+						<li>-Creating lists </li>
+						<li>-Adding navigation by using anchor tags</li>
+						<li>-Adding images by using the &lt;img&gt; tag</li>
+						<li>-Adding Email links</li>
+  					</ul>
+				</li>
+			</ol>
+
+	<h4>Description list</h4>
+		<dl>
+<!--Description list -->
+  		<dt><strong>HTML</strong></dt>
+			<dd>Hyper-text markup language - the <i>lingua franca</i> of the web</dd>
+		<dt><strong>CSS</strong></dt>
+			<dd>Cascading stylesheets - used to tell browsers how to display HTML elements</dd>
+		<dt><strong>JavaScript</strong></dt>
+			<dd>Scripting language for adding interactive behaviour to web pages</dd>
+		</dl>
+
+
+				<p>The W3C defines HTML and CSS as follows:</p>
+
+				<blockquote>
+
+					<p>HTML (the Hypertext Markup Language) and CSS (Cascading Style Sheets) are two of the core technologies for building Web pages. HTML provides the structure of the page, CSS the (visual) layout, for a variety of devices. Along with graphics and scripting, HTML and CSS are the basis of building Web pages...<p>
+
+					<footer>
+
+						<cite>
+							<a href="http://www.w3.org/standards/webdesign/htmlcss">W3C standards for web design</a>
+						</cite>
+
+					</footer>
+
+				</blockquote>
+				<p>
+
+					<a href="http://www.w3.org/html/logo/">
+
+						<img src="images/HTML5_Logo.svg" alt="HTML5 logo" style="width: 200px; height: 275px;"></a>
+				</p>
+
+				<p>In the first 3 lab tutorials I learned some of the most frequently used HTML tags and how to use them to structure text in a web page.</p>
+    
+
+		<p class="clear"><a href="#top">Go to top</a></p>
+	<!--post ends -->
+		</article>
+
+		<article>
+	<header class="post">
+		<h3><a id="week2"></a>Week 2 - Learning more tags</h3>
+			<p>Published on <time datetime="2023-10-13">October 13, 2023</time></p>
+	</header>
+
+	<p>In week 2 , I made the website more structured and cohesive website.
+		I did this by learning and adding the following things</p>
+			<ol>
+				<li>-Creating lists </li>
+				<li>-Adding navigation by using anchor tags</li>
+				<li>-Adding images by using the &lt;img&gt; tag</li>
+				<li>-Adding Email links</li>
+			</ol>
+</article>
+
+	<article>
+		<header class="post">
+			<h3><a id="week1"></a>Week 1: Creating a basic HTML website</h3>
+			<p>Published on <time datetime="2021-10-06">October 6, 2021</time></p>
+		</header>
+		<p>I finished the first lab tutorial and ended up with a basic 3-page 'website'.
+			In this tutorial I learned how to do the following things - </p>
+		<ol>
+			<li>-How to Create basic html files</li>
+			<li>-How to create a basic html structure</li>
+			<li>-How to create a basic html page</li>
+			<li>-Validate html code using the W3C markup validation service</li>
+		</ol>
+		<figure>
+			<img src="images/screenshot.png" alt="Screenshot of website" >
+			<figcaption>Image of my Website of week 1<br>
+			</figcaption>
+		</figure>
+	</article>
+    </main>
+             
+
+        
+        <p><a href="#top">Go to top</a></p>   
+
+  
+		<footer>
+			<small>&copy; 2023,River Amoss <a href="mailto:riveramoss.business@gmail.com">riveramoss.business@gmail.com</a></small>
+		</footer>
+
+	</div>
+    
+</body>
+</html>
