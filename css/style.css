@@ -1,10 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
-body {
+html{
 	overflow-x: hidden;
+}
+::-webkit-scrollbar {
+	width: 5px; /* for vertical scrollbar */
+	height: 5px; /* for horizontal scrollbar */
+}
+::-webkit-scrollbar-track {
+	background: #1e1e1f;
+	border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+	background: #7a3da9;
+	border-radius: 5px;
+}
+::-webkit-scrollbar-button {
+	width: 20px;
+}
+body {
 	margin: 0;
 	padding: 0;
 	background-color: #1e1e1f;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins',"Trebuchet MS" , sans-serif ,sans-serif;
 	color: #d6d6d6;
 	font-size: 16px;
 	line-height: 20px;
@@ -31,21 +48,29 @@ header {
 	margin-bottom: 2px;
 	background-color: #1e1e1f;
 }
+p{
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.15em;
+	line-height: 1.5;
+	margin: 10px 0 10px 0;
+}
 h1	{
 	font-family: 'Poppins', sans-serif;
 	color: #aa5ee8;
-	font-size: 36px;
-	line-height: 50px;
+	font-size: 3em;
+	line-height: 2em;
 }
 h2	{
+	font-family: 'Poppins', sans-serif;
 	font-size: 24px;
 	line-height: 35px;
 	color: #aa5ee8;
 }
 h3 	{
+	font-family: 'Poppins', sans-serif;
 	color: #ab5ee8;
-	font-size: 20px;
-	line-height: 30px;
+	font-size: 1.5em;
+	line-height: 1.7em;
 }
 ol	{
 	list-style-type: decimal;
