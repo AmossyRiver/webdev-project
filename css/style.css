@@ -1,5 +1,8 @@
-/*sections------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
 body {
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
 	background-color: #1e1e1f;
 	font-family: 'Poppins', sans-serif;
 	color: #d6d6d6;
@@ -7,9 +10,9 @@ body {
 	line-height: 20px;
 }
 #wrapper {
-	max-width: 1000px;
-	margin-right: auto;
-	margin-left: auto;
+	max-width: 70em;
+	min-width: 35em;
+	margin: 0 auto;
 	background-color: #2b2b2c;
 	padding-right: 10px;
 	padding-left: 10px;
@@ -65,18 +68,19 @@ dt	{
 dd	{
 	text-indent: 10px;
 }
-.menu li	{
-	list-style-type: none;
-	font-size: 18px;
-	margin-left: 0px;
-	margin-bottom: 25px;
-}
+
 caption	{
 	color: #ab5ee8;
 	margin-bottom: 5px;
 	font-weight: bold;
 	text-transform: uppercase;
 }
+@media only screen and (max-width: 820px) {
+.scrnsht {
+	display: none;
+	}
+}
+
 @media only screen and (max-width: 480px) {
     table {
         display: none;
@@ -118,6 +122,12 @@ a:hover {
     color: #aa5ee8;
     text-decoration: none;
 }
+.menu li	{
+	 list-style-type: none;
+	 font-size: 18px;
+	 margin-left: 0;
+	 margin-bottom: 25px;
+ }
 .menu a {
 	color: #d6d6d6;
 	padding: 5px;
@@ -125,18 +135,19 @@ a:hover {
 	border: 2px solid #aa5ee8;
 	border-radius: 3px;
 }
+
 .menu a:hover {
 	background-color: #aa5ee8;
 	color: #FFF;
 }
-.fltrt {  
+.fltr {
 	float: right;
 	margin-left: 8px;
 }
-.fltlt {
+.fltl {
 	float: left;
 	margin-right: 8px;
 }
-.clear { 
+.clr {
 	clear: both;
 }
