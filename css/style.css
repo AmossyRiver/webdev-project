@@ -141,10 +141,10 @@ img	{
 a	{
 	text-decoration: none;
 }
-a:link, a:visited, a:active	{
+a:link, a:visited, a:active{
 	color: var(--purple1);
 }
-a:hover {
+a:hover{
     color: var(--purple1);
     text-decoration: none;
 }
@@ -154,7 +154,7 @@ a:hover {
 	 margin-left: 0;
 	 margin-bottom: 25px;
  }
-.menu a {
+.menu a{
 	color: var(--bone-white);
 	padding: 5px;
 	text-decoration: none;
@@ -162,19 +162,19 @@ a:hover {
 	border-radius: 3px;
 }
 
-.menu a:hover {
+.menu a:hover{
 	background-color: var(--purple1);
 	color: var(--white);
 }
-.fltr {
+.fltr{
 	float: right;
 	margin-left: 8px;
 }
-.fltl {
+.fltl{
 	float: left;
 	margin-right: 8px;
 }
-.clr {
+.clr{
 	clear: both;
 }
 .banner {grid-area: banner;}
@@ -185,7 +185,7 @@ main {grid-area: main;}
 aside {grid-area: aside;}
 footer {grid-area: footer;}
 
-.grid-container {
+.grid-container{
 	display: grid;
 	grid-template-areas:
 	'banner banner banner banner banner banner'
@@ -199,7 +199,7 @@ footer {grid-area: footer;}
 	background-color: var(--dark-grey);
 	padding: 10px;
 }
-.grid-container > div {
+.grid-container > div{
 	background-color: var(--dark-grey);
 	padding: 10px 0;
 }
@@ -224,4 +224,31 @@ footer {grid-area: footer;}
 	height: auto;
 	max-width: 1828px;
 	margin-right: 10px;
+}
+label{
+	display: block;
+}
+input{
+	display: block;
+}
+.submit{
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: var(--blackish);
+	color: var(--purple2);
+	padding: 5px;
+	text-decoration: none;
+	border: 2px solid var(--purple1);
+	border-radius: 3px;
+}
+.submit:hover{
+	background-color: var(--purple1);
+	color: var(--off-white);
+}
+fieldset{
+	border: 1px solid var(--purple1);
+	border-radius: 3px;
+	padding: 10px;
+	margin-bottom: 10px;
 }

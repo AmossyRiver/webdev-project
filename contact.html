@@ -1,40 +1,62 @@
 
-<!doctype html><!--HTML5 doctype declaration -->
-<html lang="en"><!--default language of the document content -->
+<!doctype html>
+<html lang="en">
 	
     <head>
-		<meta charset="utf-8"><!--character encoding for the document (Unicode) -->
-		<title>Contact Me</title><!--web page title -->
+		<meta charset="utf-8">
+		<title>Contact Me</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 
 <body>
-<!--Markup all web page content inside the 'body' tags -->
 	<div id="wrapper">
-	<!--The 'wrapper' contains all the page content-->
-	
-    <header><!--The main heading for the page -->
+
+    <header>
 		<h1>Contact Me</h1>
-		<h2>sub-heading</h2>
 	</header>
-	
-    <nav><!--The primary navigation for the page -->
-	<ul>
-		<li><a href="index.html">Learning Journal</a></li>
-		<li><a href="tutorial.html">Tutorial</a></li>
-        <li><a href="contact.html">Contact me</a></li>
-	</ul>
-	</nav>
+
+		<nav class="menu">
+			<ul>
+				<li><a href="index.html">Learning Journal</a></li>
+				<li><a href="tutorial.html">Tutorial</a></li>
+				<li><a href="contact.html">Contact me</a></li>
+			</ul>
+		</nav>
     
     <main>
-           
-    </main><!--Close main page content --> 
-    
-	<footer><!--Footer content -->
+           <form id="form1">
+			   <fieldset>
+				   <legend> Contact Information </legend>
+			  		 <label for="name">Name:  <em>(Required)</em></label>
+			   		<input type="text" name="name" id="name" required placeholder="Forename + Surname">
+			   		<label for="email">Email:  <em>(Required)</em></label>
+				   	<input type="email" name="email" id="email" required placeholder="Name@address.com">
+			  	 	<label for="url">Website Address: </label>
+			   		<input type="url" name="url" id="url" value="https://">
+				  	 <label for="date">Date: </label>
+				  	 <input id="date" type="date">
+			   </fieldset>
+			   <fieldset>
+				   <label for="message">Message: </label>
+				   <textarea name="message" id="message" required></textarea>
+			   </fieldset>
+			   <fieldset>
+				   <legend>Would you like more information?</legend>
+				   <label for="yes">Yes
+				   <input type="radio" name="moreinfo" id="yes" value="yes"></label>
+				   <label for="no">No
+				   <input type="radio" name="moreinfo" id="no" value="no" checked></label>
+			   </fieldset>
+			   <input type="submit" value="Send" class="submit">
+		   </form>
+    </main>
+	<footer>
 <a href="mailto:riveramoss.business@gmail.com">Email River Amoss</a>
 
 	<small>&copy; 2023, River Amoss.</small>
 	</footer>
 
-	</div><!--Close 'wrapper' div -->
-</body><!--Close 'body' -->
-</html><!--Close 'html' -->
+	</div>
+</body>
+</html>
