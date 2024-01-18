@@ -41,7 +41,6 @@ body {
 	max-width: 70em;
 	min-width: 35em;
 	margin: 0 auto;
-	background-color: var(--dark-grey);
 	padding-right: 10px;
 	padding-left: 10px;
 }
@@ -53,25 +52,51 @@ header {
 .menu	{
 	margin-top: 10px;
 	margin-bottom: 4px;
+	display: flex;
+	justify-content: center;
 }
+article{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	background-color: var(--dark-grey);
+	border: 1px solid var(--purple1);
+	border-radius: 12px 44px 44px 12px;
+}
+article p{
+	margin-left: 6px;
+}
+
 .post	{
-	margin-top: 2px;
+	margin-top: 0;
 	margin-bottom: 2px;
-	background-color: var(--blackish);
+	margin-right: 1px;
+	border: 1px solid var(--purple2);
+	border-radius: 12px 44px 44px 12px;
+
 }
+.post h3{
+	margin-left: 6px;
+}
+.post p{
+	margin-left: 6px;
+}
+
 p{
 	font-family: 'Poppins', sans-serif;
 	font-size: 1.15em;
-	line-height: 1.5;
+	line-height: 1.1;
 	margin: 10px 0 10px 0;
 }
 h1	{
+	text-align: center;
 	font-family: 'Poppins', sans-serif;
 	color: var(--purple1);
 	font-size: 3em;
 	line-height: 2em;
+
 }
 h2	{
+	text-align: center;
 	font-family: 'Poppins', sans-serif;
 	font-size: 24px;
 	line-height: 35px;
@@ -112,9 +137,11 @@ caption	{
 	text-transform: uppercase;
 }
 
-table  {
-	border-collapse:collapse;
+table {
+	border-collapse: collapse;
 	border: 1px solid var(--grey);
+	margin-left:auto;
+	margin-right:auto;
 }
 th	{
 	background-color: var(--smoky-grey);
@@ -153,6 +180,8 @@ a:hover{
 	 font-size: 18px;
 	 margin-left: 0;
 	 margin-bottom: 25px;
+	display: inline;
+
  }
 .menu a{
 	color: var(--bone-white);
@@ -217,6 +246,9 @@ footer {grid-area: footer;}
 	table {
 		display: none;
 	}
+	.menu li{
+		display: block;
+	}
 }
 .pic{
 	float: left;
@@ -251,4 +283,36 @@ fieldset{
 	border-radius: 3px;
 	padding: 10px;
 	margin-bottom: 10px;
+}
+.week {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+	border: 2px solid var(--purple1);
+	border-radius: 18px;
+	background-color: var(--blackish);
+}
+.week li a{
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 5px;
+	color: var(--purple1);
+	text-decoration: none;
+	border: 2px solid var(--purple1-2);
+	border-radius: 12px;
+}
+.week li a:hover{
+	background-color: var(--purple1);
+	color: var(--off-white);
+}
+
+.top a{
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 5px;
+	color: var(--purple1);
+	text-decoration: none;
+	border: 1px solid var(--purple1-2);
+	border-radius: 12px;
 }
