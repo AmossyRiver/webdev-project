@@ -218,3 +218,10 @@ footer {grid-area: footer;}
 		display: none;
 	}
 }
+.pic{
+	float: left;
+	width: 50%;
+	height: auto;
+	max-width: 1828px;
+	margin-right: 10px;
+}
